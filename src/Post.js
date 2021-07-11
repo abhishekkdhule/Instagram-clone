@@ -10,14 +10,14 @@ function Post({username,caption,imageURL}) {
                 alt="Abhi"
                 src="public\logo512.png"
             />
-                <h3>{username}</h3>
+                <h6>{username}</h6>
         </div>
             {/* header -> avatar and name */}
 
             <img className="post__image" src={imageURL}  alt=""/>
             {/* image */}
 
-            <h4 className="post__text"><strong>{username}:</strong> {caption}</h4>
+            <h6 className="post__text"><strong>{username}:</strong> {caption}</h6>
             {/* username :- caption */}
             {/* comments */}
         </div>
