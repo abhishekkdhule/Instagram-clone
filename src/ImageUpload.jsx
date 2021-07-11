@@ -55,9 +55,11 @@ function ImageUpload(props) {
         <progress className="progress_bar" value={progress} max="100" />
         <p className="mb-1">Caption</p>
         <input type="text" className="form-control mb-2" onChange={(e)=> setCaption(e.target.value)} value={caption} />
+        <div className="d-flex justify-content-between m-0">
         <input type="file" onChange={uploadFile} /> 
+        <button type="submit" className="btn btn-dark mt-2 mx-auto" onClick={uploadPost}>Add post</button>    
+        </div>
         
-        <button type="submit" className="btn btn-light mt-2 mx-auto" onClick={uploadPost}>Post</button>    
         </div>
     )
 }
